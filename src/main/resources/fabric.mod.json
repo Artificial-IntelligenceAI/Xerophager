@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "xerophager",
+	"version": "${version}",
+	"name": "Xerophager",
+	"description": "An in-development horror mod for Minecraft.",
+	"authors": [
+		"Tankun Sriket"
+	],
+	"contributors": [
+		"ChatGPT (GPT-5)"
+	],
+	"contact": {
+		"homepage": "https://github.com/Artificial-IntelligenceAI/Xerophager",
+		"sources": "https://github.com/Artificial-IntelligenceAI/Xerophager",
+		"issues": "https://github.com/Artificial-IntelligenceAI/Xerophager/issues"
+	},
+	"license": "Apache-2.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.artificialintelligenceai.xerophager.Xerophager"
+		],
+		"client": [
+			"io.github.artificialintelligenceai.xerophager.client.XerophagerClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

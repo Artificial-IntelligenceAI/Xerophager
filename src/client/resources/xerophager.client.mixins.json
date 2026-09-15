@@ -4,7 +4,12 @@
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"FontMixin",
-		"FontTextureMixin"
+		"FontStringRenderOutputMixin",
+		"FontTextureMixin",
+		"GlyphInfoMixin",
+		"GuiGraphicsMixin",
+		"MultiLineLabelMixin",
+		"MultiLineTextWidgetMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

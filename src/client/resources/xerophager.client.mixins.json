@@ -3,13 +3,15 @@
 	"package": "io.github.artificialintelligenceai.xerophager.client.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
+		"CheckboxMixin",
 		"FontMixin",
 		"FontStringRenderOutputMixin",
 		"FontTextureMixin",
 		"GlyphInfoMixin",
 		"GuiGraphicsMixin",
 		"MultiLineLabelMixin",
-		"MultiLineTextWidgetMixin"
+		"MultiLineTextWidgetMixin",
+		"WarningScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -15,6 +15,20 @@ The neutral technical foundation is ready:
 
 Gameplay, story, art, audio, and other creative decisions will be documented after they are chosen by the designer.
 
+## Intended behavior
+
+Xerophager is intended to deliberately manipulate parts of the game and player experience as horror mechanics. Its planned capabilities include:
+
+- Changing the time of day and the current in-game day
+- Repositioning one or more players
+- Altering player-facing GUIs
+- Changing what one or more players can hear
+- Changing one or more players' game modes
+- Modifying world settings
+- Making other related changes to player or world state when required by the designed horror experience
+
+These effects are intended behavior, not bugs or malicious activity. Players and server operators should expect them when the corresponding features are implemented and enabled. The capabilities will be introduced progressively as their exact designs are approved.
+
 ## Development
 
 ### Requirements

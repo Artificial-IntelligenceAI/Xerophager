@@ -1,11 +1,11 @@
 package io.github.artificialintelligenceai.xerophager.client.gui;
 
 import io.github.artificialintelligenceai.xerophager.client.consent.ConsentState;
-import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.List;
 
@@ -14,6 +14,8 @@ public final class ConsentWarningScreen extends Screen {
 	private static final int TEXT_COLOR = 0xFFE6E6E6;
 	private static final int MUTED_TEXT_COLOR = 0xFFB8B8B8;
 	private static final int TITLE_COLOR = 0xFFFF5555;
+	private static final ResourceLocation PUBLIC_SANS_BOLD =
+			ResourceLocation.fromNamespaceAndPath("xerophager", "public_sans_bold");
 	private static final List<Component> WARNING_LINES = List.of(
 			Component.translatable("screen.xerophager.warning.introduction"),
 			Component.translatable("screen.xerophager.warning.time"),
@@ -61,7 +63,13 @@ public final class ConsentWarningScreen extends Screen {
 		int lineWidth = Math.min(CONTENT_WIDTH, width - 32);
 		int y = 28;
 
-		graphics.drawCenteredString(font, title.copy().withStyle(ChatFormatting.BOLD), centerX, y, TITLE_COLOR);
+		graphics.drawCenteredString(
+				font,
+				title.copy().withStyle(style -> style.withFont(PUBLIC_SANS_BOLD)),
+				centerX,
+				y,
+				TITLE_COLOR
+		);
 		y += 28;
 
 		for (Component line : WARNING_LINES) {
@@ -71,7 +79,7 @@ public final class ConsentWarningScreen extends Screen {
 
 		Component intendedBehavior = Component.translatable("screen.xerophager.warning.intended")
 				.copy()
-				.withStyle(ChatFormatting.BOLD);
+				.withStyle(style -> style.withFont(PUBLIC_SANS_BOLD));
 		graphics.drawWordWrap(font, intendedBehavior, contentLeft, y + 4, lineWidth, TITLE_COLOR);
 		graphics.drawCenteredString(
 				font,

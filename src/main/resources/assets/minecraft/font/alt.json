@@ -1,6 +1,10 @@
 {
 	"providers": [
 		{
+			"type": "reference",
+			"id": "xerophager:noto_color_emoji"
+		},
+		{
 			"type": "ttf",
 			"file": "xerophager:public_sans_regular.ttf",
 			"size": 11.0,

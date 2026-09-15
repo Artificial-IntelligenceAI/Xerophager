@@ -1,0 +1,11 @@
+Noto Color Emoji image resources
+
+Upstream: https://github.com/googlefonts/noto-emoji
+Release: v2.051
+Commit: 8998f5dd683424a73e2314a8c1f1e359c19e8742
+Source directory: png/72
+
+Xerophager converts the single-codepoint PNG images into deterministic bitmap
+font atlases. ASCII keycap bases, the combining keycap mark, regional-indicator
+flags, and private-use placeholders are excluded because Minecraft 1.21.1's
+bitmap font provider does not perform Unicode sequence shaping.

@@ -1,0 +1,13 @@
+{
+	"screen.xerophager.warning.title": "Xerophager Warning",
+	"screen.xerophager.warning.introduction": "Xerophager is a horror mod that may intentionally:",
+	"screen.xerophager.warning.time": "• Change the time of day and the current in-game day",
+	"screen.xerophager.warning.position": "• Reposition one or more players",
+	"screen.xerophager.warning.interface_audio": "• Alter player interfaces and what players hear",
+	"screen.xerophager.warning.gamemode": "• Change one or more players' game modes",
+	"screen.xerophager.warning.world": "• Modify world settings and other player or world state",
+	"screen.xerophager.warning.intended": "These effects are intended gameplay, not bugs or malicious activity.",
+	"screen.xerophager.warning.instruction": "You must accept this warning to continue.",
+	"screen.xerophager.warning.accept": "I accept",
+	"screen.xerophager.warning.save_error": "Acceptance could not be saved. Check the game log and try again."
+}

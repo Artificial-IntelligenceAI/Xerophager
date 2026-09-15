@@ -13,6 +13,7 @@ The neutral technical foundation is ready:
 - Official Mojang mappings
 - Gradle with Fabric Loom
 - A blocking first-launch consent warning
+- Public Sans used throughout the game's text rendering
 
 Gameplay, story, art, audio, and other creative decisions will be documented after they are chosen by the designer.
 
@@ -79,6 +80,7 @@ On Windows:
 - **Mappings:** Official Mojang mappings
 - **Build tooling:** Gradle and Fabric Loom
 - **Target game:** Minecraft: Java Edition 1.21.1
+- **Typeface:** [Public Sans v2.001](https://github.com/uswds/public-sans), created and maintained by the Public Sans Project Authors and the U.S. Web Design System
 
 Minecraft is a trademark of Microsoft. This project is not affiliated with or endorsed by Microsoft or Mojang Studios.
 
@@ -87,3 +89,5 @@ Minecraft is a trademark of Microsoft. This project is not affiliated with or en
 Copyright 2026 Tankun Sriket
 
 Licensed under the [Apache License 2.0](LICENSE).
+
+The bundled Public Sans font is separately licensed under the [SIL Open Font License 1.1](src/main/resources/META-INF/licenses/xerophager/Public-Sans-OFL-1.1.md).

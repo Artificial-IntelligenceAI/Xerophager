@@ -14,6 +14,7 @@ The neutral technical foundation is ready:
 - Gradle with Fabric Loom
 - A blocking first-launch consent warning
 - Public Sans used throughout the game's text rendering
+- Smooth linear font sampling, pixel-offset text shadows disabled, and 8x internal Public Sans rendering
 - Google Noto Color Emoji used for supported emoji glyphs throughout the game
 
 Gameplay, story, art, audio, and other creative decisions will be documented after they are chosen by the designer.

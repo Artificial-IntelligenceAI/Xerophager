@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "io.github.artificialintelligenceai.xerophager.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"FontMixin",
+		"FontTextureMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

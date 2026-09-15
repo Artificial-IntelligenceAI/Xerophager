@@ -25,6 +25,12 @@
 			"io.github.artificialintelligenceai.xerophager.client.XerophagerClient"
 		]
 	},
+	"mixins": [
+		{
+			"config": "xerophager.client.mixins.json",
+			"environment": "client"
+		}
+	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~1.21.1",

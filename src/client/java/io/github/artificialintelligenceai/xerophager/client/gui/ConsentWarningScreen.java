@@ -46,8 +46,15 @@ public final class ConsentWarningScreen extends Screen {
 	}
 
 	@Override
-	public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
+	public void renderBackground(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
 		graphics.fillGradient(0, 0, width, height, 0xFF120000, 0xFF000000);
+	}
+
+	@Override
+	public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
+		// Screen.render draws the background first and the widgets second. Drawing
+		// the warning text afterward keeps it out of Minecraft's background blur.
+		super.render(graphics, mouseX, mouseY, delta);
 
 		int centerX = width / 2;
 		int contentLeft = Math.max(16, centerX - CONTENT_WIDTH / 2);
@@ -77,8 +84,6 @@ public final class ConsentWarningScreen extends Screen {
 		if (saveError != null) {
 			graphics.drawCenteredString(font, saveError, centerX, Math.min(height - 64, 164), TITLE_COLOR);
 		}
-
-		super.render(graphics, mouseX, mouseY, delta);
 	}
 
 	@Override
